@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			/*
+			 
+			 * 	
+			 * 
+			*/
+			
+			function Person(){
+				this.name = 12;
+				this.age = 11;
+			}
+			Person.prototype.run = function(){
+				console.log(1);
+			}
+						
+			function Fn(){
+				
+			}
+			
+			//Fn.prototype = Person.prototype;
+			
+			function Paohui(){}
+			
+			Paohui.prototype = Person.prototype;
+			
+			var pao = new Paohui();
+			Fn.prototype = pao;
+			Fn.prototype.say = function(){
+				alert()
+			}
+			
+			
+			var t = new Fn();
+			t.run()
+			console.log(t,Person.prototype)
+		</script>
+	</body>
+</html>
